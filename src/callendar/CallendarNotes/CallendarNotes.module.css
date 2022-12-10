@@ -1,0 +1,89 @@
+.note__wrap {
+    background: #1b1c1e;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    min-height: 700px;
+    min-width: 0;
+    position: relative;
+    transition: 0.3s ease-in;
+    transform: translateX(-336px);
+}
+.note__wrap.note__opened {
+    min-width: 300px;
+    transform: translateX(0);
+}
+.note__title h4 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+}
+.note__details p {
+    color: #fff;
+}
+.notes__list__wrapper {
+    margin-top: 20px;
+}
+.notes__list {
+    margin-top: 5px;
+    list-style-type: disc;
+    color: #fff;
+    padding-left: 16px;
+}
+.note__title {
+    display: flex;
+}
+.note__title h4{
+    margin-left: 5px;
+}
+.close__btn {
+    color: #fff;
+    font-weight: 500;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c50807;
+    transition: 0.3s ease-in;
+    border-radius: 4px;
+    position: absolute;
+    width: 93%;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.addBtn__wrapper {
+    margin-top: 10px;
+}
+.createNote__form {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.createInput__wrap {
+    transition: 0.3s ease-in;
+}
+.createInput__wrap input,
+.createInput__wrap textarea {
+    width: 100%;
+    margin-bottom: 5px;
+    background: none;
+    border: 1px solid #2d2f30;
+    border-radius: 4px;
+    padding: 5px 8px;
+    color: gray;
+    outline: none;
+    font-size: 12px;
+}
+button.addNote__bth {
+    background: #c50807;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 16px;
+    border-radius: 4px;
+    max-width: 30%;
+}
+.close__btn:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}

@@ -1,0 +1,46 @@
+.dayItem { 
+    display: flex;
+    border-bottom: 2px solid #2d2f30;
+}
+.dayItem:last-child { 
+    border-bottom: none;
+}
+.dateWrap {
+    padding: 10px;
+    color: rgb(20, 20, 20);
+    font-size: 16px;
+}
+.day__wrap {
+    width: calc(100% / 7);
+    padding: 6px;
+    font-size: 16px;
+    border-right: 2px solid #2d2f30;
+    height: 85px;
+    /* display: flex;
+    justify-content: flex-end; */
+    cursor: pointer;
+}
+.day__wrap:last-child {
+    border-right: none;
+}
+.day__wrap p {
+    color: rgb(216, 214, 214);
+    font-weight: 700;
+    text-align: right;
+}
+.day {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100%;
+    transform: translateX(-100%);
+}
+.day__wrap.today .day{
+    /* color: #e00200; */
+    background: #c50807;
+}
+

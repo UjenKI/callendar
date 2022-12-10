@@ -1,0 +1,23 @@
+.params__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.params__btn{
+    color: rgb(216, 214, 214);
+    font-weight: 700;
+    font-size: 25px;
+}
+.parameters {
+    margin: 0 20px;
+}
+select {
+    border: none;
+    background: none;
+    color: rgb(216, 214, 214);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    outline: none;
+}

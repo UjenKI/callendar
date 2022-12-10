@@ -1,0 +1,62 @@
+.month{
+  padding: 10px;
+}
+.callendar__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.callendar {
+  background: #1b1c1e;
+  border-radius: 8px;
+  border: 2px solid #2d2f30;
+}
+h2{
+  font-size: 30px;
+  color: rgb(240, 233, 233);
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.daysWeek__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+  .dayItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid gray;
+    width: calc(100% / 7);
+}
+  .callendar{
+    max-width: 900px;
+    width: 100%;
+    padding: 25px;
+    min-height: 750px;
+    z-index: 9;
+  }
+.daysWeek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: calc(100% / 7);
+}
+.daysWeek__item {
+  padding: 10px;
+  font-size: 16px;
+}
+.daysWeek__item p{
+  color: rgb(160, 158, 158);
+}
+.daysList {
+  border: 2px solid #2d2f30;
+}
+button { 
+  color: #fff;
+}
