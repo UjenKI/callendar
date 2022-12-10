@@ -11,3 +11,11 @@
     font-weight: 300;
     color: #fff;
 }
+.notes.notes__count {
+    width: 30%;
+}
+.notes.notes__count span{
+    font-size: 10px;
+    color: #b3b1b1;
+    line-height: 12px;
+}

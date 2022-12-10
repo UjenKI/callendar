@@ -19,11 +19,6 @@ export interface DaysStateData {
 }
 
 export interface NoteDetailsInfo {
-    // date: number | null,
-    // day: number | null,
-    // year: number | null,
-    // month: number | null
-    // time: string | null
     date: number,
     day: number
     year: number
@@ -33,7 +28,7 @@ export interface NoteDetailsInfo {
 
 export interface NoteInterface {
     id: number | null
-    noteTitle: string | null
+    noteTitle: string 
     noteText: string | null
     noteDate: string | null
     noteCreatingDetails: NoteDetailsInfo
@@ -67,7 +62,7 @@ const Callendar = () => {
     }
 
     useEffect(() => {
-        console.log(notes)
+        // console.log(notes)
     }, [notes])
 
     useEffect(() => {

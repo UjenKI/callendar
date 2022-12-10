@@ -1,5 +1,4 @@
-import { getDefaultSettings } from 'http2';
-import React, { FC, useState, useRef } from 'react';
+import React, { FC, useState, useRef, createRef } from 'react';
 import { weekDays, daysArr, monthNames } from '../../defaultData/defConfig';
 import { NoteInterface } from '../Callendar';
 import style from './CallendarNotes.module.css';
@@ -15,7 +14,7 @@ interface CallendarNotesProps {
 }
 
 const CallendarNotes: FC<CallendarNotesProps> = ({ setNotes, notes, closeNote, month, year, selectedDate, isOpened }) => {
-    const [title, setTitle] = useState<string | null>(null)
+    const [title, setTitle] = useState<string>('')
     const [noteText, setNoteText] = useState<string | null>(null)
     const [isOpenForm, setIsOpenForm] = useState(false);
 
@@ -23,7 +22,6 @@ const CallendarNotes: FC<CallendarNotesProps> = ({ setNotes, notes, closeNote, m
     const dayInWeek = weekDays[date.getDay() - 1]
     const dateNum = date.getDate()
     const monthName = monthNames[month];
-    // console.log(dayInWeek)
 
     const closingNote = () => {
         closeNote()
@@ -36,8 +34,6 @@ const CallendarNotes: FC<CallendarNotesProps> = ({ setNotes, notes, closeNote, m
 
     const onSubmitForm = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log(title + " - title")
-        console.log(noteText + " - note text")
         setIsOpenForm(false)
 
         const creationDate = new Date()
@@ -57,6 +53,8 @@ const CallendarNotes: FC<CallendarNotesProps> = ({ setNotes, notes, closeNote, m
                 time: createNoteTime
             }
         }
+        setTitle('')
+        setNoteText('')
         setNotes(noteObj);
     }
 

@@ -25,9 +25,29 @@
 }
 .notes__list {
     margin-top: 5px;
-    list-style-type: disc;
+    list-style-type: none;
     color: #fff;
-    padding-left: 16px;
+}
+.notes__item {
+    background: #575555;
+    border-radius: 4px;
+    padding: 3px 7px;
+    margin-bottom: 5px;
+}
+.notes__item h5 {
+    font-size: 15px;
+    font-weight: 700;
+}
+.notes__item p {
+    font-size: 13px;
+    color: #bab7b7;
+}
+.notes__item span {
+    text-align: end;
+    width: 100%;
+    display: inline-block;
+    font-size: 10px;
+    color: #aba9a9;
 }
 .note__title {
     display: flex;
